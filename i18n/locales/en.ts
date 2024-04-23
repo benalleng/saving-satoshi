@@ -1659,6 +1659,19 @@ const translations = {
       intro: `Intro`,
       paragraph_one: `—DEBORAH CHUNK: “Mr. Vanderpoole, if I may. People are confused and uncertain about whether the bitcoin supply has been tampered with. Mr. Vanderpoole, can you prove that you did no such thing? Mysterious hacker and his holocat, can you prove Vanderpoole had attempted this crime against Bitcoin?”`,
     },
+    building_blocks_five: {
+      heading: '3. Transaction Data',
+      paragraph_one:
+        'The transaction objects confirmed in a block are JSON objects that include arrays of "inputs" and "outputs". Both of these arrays are lists of UTXOs, also known as "coins". Coin objects have a "value" property represented in satoshis.',
+      paragraph_two:
+        'The "inputs" array is the coins spent (destroyed) by the transaction and the "outputs" array is the coins created by the transaction. You may recall from Chapter 6 that transactions always pay a fee to incentivize miners to include them in a block. That fee is exactly the difference in value between the total input and total output values of a transaction.',
+      paragraph_three:
+        'In other words, the miner gets to keep whatever bitcoin that was sent in to the transaction but not sent back out to the transaction recipients.',
+      paragraph_four: 'There is a transaction with the txid:',
+      paragraph_five: 'in a block with the hash:',
+      paragraph_six: "Print that transaction's fee in satoshis.",
+      success: 'Nice you found the fee for this transaction!',
+    },
     outro_one: {
       title: 'Outro',
       heading: "We're doing it live!",
